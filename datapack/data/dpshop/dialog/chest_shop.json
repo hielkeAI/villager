@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Chest Shop",
+  "external_title": "Chest Shop",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "chest shop. contents are taken from the chest inventory behind the sign. prices are defined by op via the sign (line 2 = price, line 3 = item)."
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "columns": 2,
+  "actions": [
+    { "label": "buy 1", "action": { "type": "run_command", "command": "function dpshop:shop/chest_buy_one" } },
+    { "label": "buy 10", "action": { "type": "run_command", "command": "function dpshop:shop/chest_buy_ten" } },
+    { "label": "sell to shop (refill)", "action": { "type": "run_command", "command": "function dpshop:shop/chest_sell" } },
+    { "label": "restock help", "action": { "type": "run_command", "command": "tellraw @s {\"text\":\"Place items in the chest behind the sign to refill. Owners can /function dpshop:shop/refill_chest\",\"color\":\"gray\"}" } }
+  ],
+  "exit_action": {
+    "label": "close",
+    "action": { "type": "run_command", "command": "playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Admin Shop",
+  "external_title": "Admin Shop",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "admin only. place a 'price sign' on a chest to create a chest shop, or grant money to players. (op / luckperms 'dpshop.admin' required.)"
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "columns": 2,
+  "actions": [
+    { "label": "grant 100$ to self", "action": { "type": "run_command", "command": "function dpshop:shop/grant_money_self" } },
+    { "label": "grant 1000$ to self", "action": { "type": "run_command", "command": "function dpshop:shop/grant_money_self_big" } },
+    { "label": "tag nearest villager as shop", "action": { "type": "run_command", "command": "function dpshop:shop/tag_villager_shop" } },
+    { "label": "tag nearest villager as adminshop", "action": { "type": "run_command", "command": "function dpshop:shop/tag_villager_admin" } },
+    { "label": "make clicked chest a shop", "action": { "type": "run_command", "command": "function dpshop:shop/tag_chest_shop" } }
+  ],
+  "exit_action": {
+    "label": "close",
+    "action": { "type": "run_command", "command": "playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1" }
+  }
+}

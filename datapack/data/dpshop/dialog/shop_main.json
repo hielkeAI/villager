@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Villager Shop",
+  "external_title": "Villager Shop",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "pick an item to buy. money is tracked by the dpshop.money scoreboard (give yourself with /scoreboard players add @s dpshop.money <n>). admin grants via /function dpshop:shop/grant_money."
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "columns": 2,
+  "actions": [
+    { "label": "apple x1 - 5$", "action": { "type": "run_command", "command": "function dpshop:shop/buy_apple" } },
+    { "label": "bread x1 - 8$", "action": { "type": "run_command", "command": "function dpshop:shop/buy_bread" } },
+    { "label": "iron ingot x1 - 20$", "action": { "type": "run_command", "command": "function dpshop:shop/buy_iron" } },
+    { "label": "gold ingot x1 - 40$", "action": { "type": "run_command", "command": "function dpshop:shop/buy_gold" } },
+    { "label": "diamond x1 - 100$", "action": { "type": "run_command", "command": "function dpshop:shop/buy_diamond" } },
+    { "label": "ender pearl x1 - 50$", "action": { "type": "run_command", "command": "function dpshop:shop/buy_pearl" } }
+  ],
+  "exit_action": {
+    "label": "close",
+    "action": { "type": "run_command", "command": "playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1" }
+  }
+}

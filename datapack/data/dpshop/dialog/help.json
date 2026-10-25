@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "How to use Villager Shops",
+  "external_title": "Villager Shops Help",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "1) rename a name tag to [shop] in an anvil and right-click a villager.\n2) players right-click that villager to buy items.\n3) money starts at 500 and is saved automatically.\n4) chest shops: put a chest, a sign on top saying [shop], stock the chest.\n5) admins (op) can rename tags to [admin shop] for admin tools."
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "columns": 1,
+  "actions": [
+    { "label": "open shop", "action": { "type": "run_command", "command": "function dpshop:shop/open_main" } },
+    { "label": "get 100 money (op only)", "action": { "type": "run_command", "command": "function dpshop:shop/grant_money_self" } },
+    { "label": "close", "action": { "type": "run_command", "command": "playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1" } }
+  ],
+  "exit_action": { "label": "close", "action": { "type": "run_command", "command": "playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1" } }
+}

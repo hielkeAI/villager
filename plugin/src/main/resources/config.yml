@@ -1,0 +1,28 @@
+lang: cy
+shop:
+  items:
+    - material: APPLE
+      price: 5
+    - material: BREAD
+      price: 8
+    - material: IRON_INGOT
+      price: 20
+    - material: GOLD_INGOT
+      price: 40
+    - material: DIAMOND
+      price: 100
+    - material: ENDER_PEARL
+      price: 50
+  default-balance: 500
+  tax-percent: 0
+chest-shop:
+  default-price: 5
+  default-item: APPLE
+homes:
+  default-limit: 3
+rtp:
+  radius: 5000
+  cooldown: 60
+  max-tries: 30
+tpa:
+  timeout: 60

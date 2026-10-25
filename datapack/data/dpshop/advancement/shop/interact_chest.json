@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:right_click_block",
+      "conditions": {
+        "block": "minecraft:chest"
+      }
+    }
+  },
+  "rewards": {
+    "function": "dpshop:shop/on_chest_interact"
+  }
+}

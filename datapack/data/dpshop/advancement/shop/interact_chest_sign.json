@@ -1,0 +1,11 @@
+{
+  "criteria": {
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "function": "dpshop:shop/on_chest_interact"
+  }
+}

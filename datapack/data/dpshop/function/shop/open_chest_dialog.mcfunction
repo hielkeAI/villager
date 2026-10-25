@@ -1,0 +1,1 @@
+function dpshop:shop/open_chest

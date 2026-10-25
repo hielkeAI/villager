@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "sell items",
+  "external_title": "sell to shop",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "sell your items for money. prices are lower than buy prices."
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "columns": 2,
+  "actions": [
+    { "label": "sell 1 apple (3$)", "action": { "type": "run_command", "command": "function dpshop:shop/sell_apple" } },
+    { "label": "sell 1 bread (5$)", "action": { "type": "run_command", "command": "function dpshop:shop/sell_bread" } },
+    { "label": "sell 1 iron ingot (12$)", "action": { "type": "run_command", "command": "function dpshop:shop/sell_iron" } },
+    { "label": "sell 1 diamond (60$)", "action": { "type": "run_command", "command": "function dpshop:shop/sell_diamond" } }
+  ],
+  "exit_action": { "label": "close", "action": { "type": "run_command", "command": "playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1" } }
+}

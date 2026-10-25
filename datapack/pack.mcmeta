@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "pack_format": 81,
+    "description": "Villager & Chest Shops using the 1.21.11 Dialog GUI (datapack)",
+    "supported_formats": [81]
+  }
+}

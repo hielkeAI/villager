@@ -1,0 +1,53 @@
+name: DpShop
+version: ${version}
+main: com.dpshop.plugin.DpShopPlugin
+api-version: "1.21"
+description: Villager & chest shops using the 1.21.6+ Dialog GUI
+softdepend: [Vault, LuckPerms]
+commands:
+  dpshop:
+    description: DpShop commands
+    usage: /dpshop <shop|admin|chest|buy|MATERIAL|money|grant|tag>
+  home:
+    description: Teleport home
+  sethome:
+    description: Set a home
+  delhome:
+    description: Delete a home
+  homes:
+    description: List homes
+  cartref:
+    description: Teleport home (Cymru)
+  gosodcartref:
+    description: Set a home (Cymru)
+  dileucartref:
+    description: Delete a home (Cymru)
+  cartrefau:
+    description: List homes (Cymru)
+  rtp:
+    description: Random teleport
+  tpa:
+    description: Teleport request
+  tpahere:
+    description: Request player teleport to you
+  tpaccept:
+    description: Accept tpa
+  tpdeny:
+    description: Deny tpa
+  galw:
+    description: Galw (Cymru tpa)
+  galwyfan:
+    description: Galw fan yma (Cymru)
+  derbyn:
+    description: Derbyn (Cymru accept)
+  gwrthod:
+    description: Gwrthod (Cymru deny)
+  pay:
+    description: Pay a player
+permissions:
+  dpshop.admin:
+    description: Access admin shop
+    default: op
+  dpshop.use:
+    description: Use player shops
+    default: true

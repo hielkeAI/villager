@@ -1,0 +1,1 @@
+dialog show @s dpshop:chest_shop
